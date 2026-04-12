@@ -13,7 +13,7 @@ export default function Home() {
 
         <div className="mt-8 flex gap-4 justify-center">
           <a
-            href="mailto:hello@lusicode.com"
+            href="mailto:support@lusicode.com"
             className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-500 transition"
           >
             Contact
