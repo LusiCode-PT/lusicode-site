@@ -2,37 +2,51 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 text-center">
+    <main className="min-h-screen bg-black text-white">
 
-      {/* LOGO */}
-      <div className="mb-6">
-        <Image src="/logo.svg" alt="LusiCode logo" width={180} height={50} />
-      </div>
+      {/* HEADER */}
+      <header className="flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
+        <div className="flex items-center gap-3">
+          <Image src="/icon.png" alt="logo" width={32} height={32} />
 
-      {/* TITLE */}
-      <h1 className="text-5xl font-bold tracking-tight">
-        Building modern digital tools
-      </h1>
+          <span className="text-lg font-semibold">
+            Lusi<span className="text-blue-500">Code</span>
+          </span>
+        </div>
 
-      {/* SUBTITLE */}
-      <p className="mt-6 text-lg text-gray-400 max-w-xl">
-        We create simple and powerful apps that solve everyday problems.
-      </p>
-
-      {/* STATUS */}
-      <p className="mt-4 text-blue-500 font-medium">
-        🚀 New products are coming soon
-      </p>
-
-      {/* CTA */}
-      <div className="mt-10">
         <a
           href="mailto:support@lusicode.com"
-          className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-500 transition transform hover:scale-105"
+          className="text-sm text-gray-400 hover:text-white transition"
         >
-          Get in touch
+          Contact
         </a>
-      </div>
+      </header>
+
+      {/* HERO */}
+      <section className="flex flex-col items-center justify-center text-center px-6 mt-20">
+
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tight max-w-3xl">
+          Building modern apps that solve real problems
+        </h1>
+
+        <p className="mt-6 text-lg text-gray-400 max-w-xl">
+          Simple, powerful and focused on real-world use.
+        </p>
+
+        <p className="mt-4 text-blue-500 font-medium">
+          🚀 New products are coming soon
+        </p>
+
+        <div className="mt-10">
+          <a
+            href="mailto:support@lusicode.com"
+            className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-500 transition transform hover:scale-105"
+          >
+            Get in touch
+          </a>
+        </div>
+
+      </section>
 
     </main>
   );
